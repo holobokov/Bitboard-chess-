@@ -8,12 +8,15 @@ int main() {
     init_leapers_attacks();
 
     for (int square = 0; square < 64; square++) {
-        print_bitboard(pawn_attacks[white][square]);
+        //print_bitboard(pawn_attacks[white][square]);
     }
 
     for (int square = 0; square < 64; square++) {
-        print_bitboard(pawn_attacks[black][square]);
+        print_bitboard(knight_attacks[square]);
     }
+
+    //print_bitboard(mask_knight_attacks(h8));
+
     //print_bitboard(not_ab_file);
 
     return 0;

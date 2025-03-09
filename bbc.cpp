@@ -54,6 +54,31 @@ U64 mask_pawn_attacks(int side, int square) {
     return attacks;
 }
 
+
+//knight attack
+
+//knight attacks table [square], because side doesnt matter
+U64 knight_attacks[64];
+
+U64 mask_knight_attacks(int square) {
+    U64 attacks = 0ULL;
+
+    U64 bitboard = 0ULL;
+
+    set_bit(bitboard, square);
+    if ((bitboard >> 15) & not_a_file) attacks |= (bitboard >> 15);
+    if ((bitboard >> 17) & not_h_file) attacks |= (bitboard >> 17);
+    if ((bitboard >> 10) & not_hg_file) attacks |= (bitboard >> 10);
+    if ((bitboard << 6) & not_hg_file) attacks |= (bitboard << 6);
+    if ((bitboard << 15) & not_h_file) attacks |= (bitboard << 15);
+    if ((bitboard << 17) & not_a_file) attacks |= (bitboard << 17);
+    if ((bitboard << 10) & not_ab_file) attacks |= (bitboard << 10);
+    if ((bitboard >> 6) & not_ab_file) attacks |= (bitboard >> 6);
+
+    return attacks;
+}
+
+
 //init leaper pieces attacks
 void init_leapers_attacks() {
     //loop over 64 board squares
@@ -61,5 +86,7 @@ void init_leapers_attacks() {
         //init pawn arttacks
         pawn_attacks[white][square] = mask_pawn_attacks(white, square);
         pawn_attacks[black][square] = mask_pawn_attacks(black, square);
+
+        knight_attacks[square] = mask_knight_attacks(square);
     }
 }
