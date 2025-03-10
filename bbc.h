@@ -26,7 +26,8 @@ const U64 not_ab_file = 18229723555195321596ULL;
 extern U64 pawn_attacks[2][64];
 //knight attacks table [square], because side doesnt matter
 extern U64 knight_attacks[64];
-
+//king atrtacks
+extern U64 king_attacks[64];
 
 // board square
 enum {
@@ -48,9 +49,10 @@ enum {
 
 
 void print_bitboard(U64 bitboard);
-U64 mask_pawn_attacks(int square, int side);
 void init_leapers_attacks();
+U64 mask_pawn_attacks(int square, int side);
 U64 mask_knight_attacks(int square);
+U64 mask_king_attacks(int square);
 
 
 #endif //BBC_H

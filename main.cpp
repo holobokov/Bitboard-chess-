@@ -12,10 +12,10 @@ int main() {
     }
 
     for (int square = 0; square < 64; square++) {
-        print_bitboard(knight_attacks[square]);
+        print_bitboard(king_attacks[square]);
     }
 
-    //print_bitboard(mask_knight_attacks(h8));
+    //print_bitboard(mask_king_attacks(h8));
 
     //print_bitboard(not_ab_file);
 
