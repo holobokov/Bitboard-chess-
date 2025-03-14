@@ -15,7 +15,7 @@ int main() {
         //print_bitboard(knight_attacks[square]);
     }
 
-    print_bitboard(mask_bishop_attacks(d4));
+    print_bitboard(mask_rook_attacks(e2));
 
     //print_bitboard(not_ab_file);
 
