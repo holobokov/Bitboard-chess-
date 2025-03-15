@@ -7,15 +7,23 @@ int main() {
 
     init_leapers_attacks();
 
-    for (int square = 0; square < 64; square++) {
-        //print_bitboard(pawn_attacks[white][square]);
-    }
+    // for (int square = 0; square < 64; square++) {
+    //     //print_bitboard(pawn_attacks[white][square]);
+    // }
+    //
+    // for (int square = 0; square < 64; square++) {
+    //     //print_bitboard(knight_attacks[square]);
+    // }
 
-    for (int square = 0; square < 64; square++) {
-        //print_bitboard(knight_attacks[square]);
-    }
+    //init occupancy bitboard
+     U64 block = 0ULL;
+    set_bit(block, d7);
+    set_bit(block, d3);
+    set_bit(block, b4);
+    set_bit(block, h4);
+    print_bitboard(block);
 
-    print_bitboard(mask_rook_attacks(e2));
+    print_bitboard(rook_attacks_on_fly(d4, block));
 
     //print_bitboard(not_ab_file);
 

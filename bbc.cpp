@@ -131,11 +131,75 @@ U64 mask_rook_attacks(int square) {
     int tr = square / 8;
     int tf = square % 8;
 
-    //mask relevant bishop occupancy bits
+    //mask relevant rook occupancy bits
     for (r = tr + 1; r <= 6; r++) attacks|= (1ULL << (r * 8 + tf));
     for (r = tr - 1; r >= 1; r--) attacks|= (1ULL << (r * 8 + tf));
     for (f = tf + 1; f <= 6; f++) attacks|= (1ULL << (tr * 8 + f));
     for (f = tf - 1; f >= 1; f--) attacks|= (1ULL << (tr * 8 + f));
+
+
+    return attacks;
+}
+
+// generate bishop attacks on the fly
+U64 bishop_attacks_on_fly(int square, U64 block) {
+    U64 attacks = 0ULL;
+
+    //init ranks and files
+    int r, f;
+
+    //init target ranks and files
+    int tr = square / 8;
+    int tf = square % 8;
+
+    //generate bishop attacks
+    for (r = tr + 1, f = tf + 1; r <= 7 && f <= 7; r++, f++) {
+        attacks |= (1ULL << (r * 8 + f));
+        if ((1ULL << (r * 8 + f)) & block) break;
+    }
+    for (r = tr - 1, f = tf + 1; r >= 0 && f <= 7; r--, f++) {
+        attacks |= (1ULL << (r * 8 + f));
+        if ((1ULL << (r * 8 + f)) & block) break;
+    }
+    for (r = tr + 1, f = tf - 1; r <= 7 && f >= 0; r++, f--) {
+        attacks |= (1ULL << (r * 8 + f));
+        if ((1ULL << (r * 8 + f)) & block) break;
+    }
+    for (r = tr - 1, f = tf - 1; r >= 0 && f >= 0; r--, f--) {
+        attacks |= (1ULL << (r * 8 + f));
+        if ((1ULL << (r * 8 + f)) & block) break;
+    }
+
+    return attacks;
+}
+
+U64 rook_attacks_on_fly(int square, U64 block) {
+    U64 attacks = 0ULL;
+
+    //init ranks and files
+    int r, f;
+
+    //init target ranks and files
+    int tr = square / 8;
+    int tf = square % 8;
+
+    //generate rook attacks
+    for (r = tr + 1; r <= 7; r++) {
+        attacks|= (1ULL << (r * 8 + tf));
+        if ((1ULL << (r * 8 + tf)) & block) break;
+    }
+    for (r = tr - 1; r >= 0; r--) {
+        attacks|= (1ULL << (r * 8 + tf));
+        if ((1ULL << (r * 8 + tf)) & block) break;
+    }
+    for (f = tf + 1; f <= 7; f++) {
+        attacks|= (1ULL << (tr * 8 + f));
+        if ((1ULL << (tr * 8 + f)) & block) break;
+    }
+    for (f = tf - 1; f >= 0; f--) {
+        attacks|= (1ULL << (tr * 8 + f));
+        if ((1ULL << (tr * 8 + f)) & block) break;
+    }
 
 
     return attacks;
