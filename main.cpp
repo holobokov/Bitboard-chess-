@@ -25,6 +25,8 @@ int main() {
 
     print_bitboard(rook_attacks_on_fly(d4, block));
 
+    std::cout << count_bits(block) << std::endl;
+
     //print_bitboard(not_ab_file);
 
     return 0;
