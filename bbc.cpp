@@ -36,6 +36,15 @@ int count_bits(U64 bitboard) {
     return count;
 }
 
+// getting index of least significant 1st bit
+int index_first_bit(U64 bitboard) {
+    if (bitboard) {
+        return count_bits((bitboard & -bitboard) - 1);
+    } else {
+        return -1;
+    }
+}
+
 //attacks
 
 //pawn attacks table [side][square]

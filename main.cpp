@@ -16,7 +16,7 @@ int main() {
     // }
 
     //init occupancy bitboard
-     U64 block = 0ULL;
+    U64 block = 0ULL;
     set_bit(block, d7);
     set_bit(block, d3);
     set_bit(block, b4);
@@ -25,7 +25,8 @@ int main() {
 
     print_bitboard(rook_attacks_on_fly(d4, block));
 
-    std::cout << count_bits(block) << std::endl;
+    //std::cout << count_bits(block) << std::endl;
+    std::cout << index_first_bit(block) << ", " << square_to_coordinate[index_first_bit(block)] << std::endl;
 
     //print_bitboard(not_ab_file);
 
