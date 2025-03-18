@@ -61,6 +61,18 @@ build CMakeFiles/bbc.dir/bbc.cpp.o: CXX_COMPILER__bbc_unscanned_Debug /Users/gol
   OBJECT_DIR = CMakeFiles/bbc.dir
   OBJECT_FILE_DIR = CMakeFiles/bbc.dir
 
+build CMakeFiles/bbc.dir/Bitboard.cpp.o: CXX_COMPILER__bbc_unscanned_Debug /Users/golobokov/Desktop/bbc/Bitboard.cpp || cmake_object_order_depends_target_bbc
+  DEP_FILE = CMakeFiles/bbc.dir/Bitboard.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/bbc.dir
+  OBJECT_FILE_DIR = CMakeFiles/bbc.dir
+
+build CMakeFiles/bbc.dir/Pieces.cpp.o: CXX_COMPILER__bbc_unscanned_Debug /Users/golobokov/Desktop/bbc/Pieces.cpp || cmake_object_order_depends_target_bbc
+  DEP_FILE = CMakeFiles/bbc.dir/Pieces.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/bbc.dir
+  OBJECT_FILE_DIR = CMakeFiles/bbc.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bbc
@@ -69,7 +81,7 @@ build CMakeFiles/bbc.dir/bbc.cpp.o: CXX_COMPILER__bbc_unscanned_Debug /Users/gol
 #############################################
 # Link the executable bbc
 
-build bbc: CXX_EXECUTABLE_LINKER__bbc_Debug CMakeFiles/bbc.dir/main.cpp.o CMakeFiles/bbc.dir/bbc.cpp.o
+build bbc: CXX_EXECUTABLE_LINKER__bbc_Debug CMakeFiles/bbc.dir/main.cpp.o CMakeFiles/bbc.dir/bbc.cpp.o CMakeFiles/bbc.dir/Bitboard.cpp.o CMakeFiles/bbc.dir/Pieces.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/bbc.dir
   POST_BUILD = :

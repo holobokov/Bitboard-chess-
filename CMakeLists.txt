@@ -3,4 +3,4 @@ project(bbc)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(bbc main.cpp bbc.h bbc.cpp)
+add_executable(bbc main.cpp Bitboard.cpp Bitboard.h Pieces.cpp Pieces.h)
