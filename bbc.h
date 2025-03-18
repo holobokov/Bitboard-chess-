@@ -62,6 +62,7 @@ enum {
 void print_bitboard(U64 bitboard);
 int count_bits(U64 bitboard);
 int index_first_bit(U64 bitboard);
+U64 set_occupancy(int index, int bits_in_mask, U64 attack_mask);
 void init_leapers_attacks();
 U64 mask_pawn_attacks(int square, int side);
 U64 mask_knight_attacks(int square);

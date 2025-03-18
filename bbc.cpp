@@ -45,6 +45,25 @@ int index_first_bit(U64 bitboard) {
     }
 }
 
+//set occupancy
+U64 set_occupancy(int index, int bits_in_mask, U64 attack_mask) {
+    //occupancy map
+    U64 occupancy = 0ULL;
+
+    for (int i = 0; i < bits_in_mask; i++) {
+        //get LS1B index of attack mask
+        int square = index_first_bit(attack_mask);
+        pop_bit(attack_mask, square);
+
+        if (index & (1 << i)) {
+            //update occupancy map
+            occupancy |= (1ULL << square);
+        }
+    }
+
+    return occupancy;
+}
+
 //attacks
 
 //pawn attacks table [side][square]
