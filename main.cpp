@@ -1,5 +1,4 @@
 #include <iostream>
-#include "bbc.h"
 #include "Bitboard.h"
 #include "Pieces.h"
 
