@@ -5,6 +5,8 @@
 #ifndef PIECES_H
 #define PIECES_H
 
+#include "BitboardClass.h"
+
 
 //pawn attacks table [side][square]
 extern U64 pawn_attacks[2][64];

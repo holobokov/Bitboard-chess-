@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Bitboard.h"
+#include "BitboardClass.h"
 #include "Pieces.h"
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -34,10 +34,12 @@ int main() {
     ///std::cout << index_first_bit(block) << ", " << square_to_coordinate[index_first_bit(block)] << std::endl;
 
     //print_bitboard(not_ab_file);
-    U64 attack_mask = mask_rook_attacks(e4);
-    U64 occupancy = set_occupancy(4095, count_bits(attack_mask), attack_mask);
+    Bitboard attack_mask;
+    attack_mask.setBitboard(mask_rook_attacks(e4));
+    Bitboard occupancy;
+    occupancy.setBitboard(attack_mask.set_occupancy(4095, attack_mask.count_bits()));
 
-    print_bitboard(occupancy);
+    occupancy.print_bitboard();
 
     return 0;
 }

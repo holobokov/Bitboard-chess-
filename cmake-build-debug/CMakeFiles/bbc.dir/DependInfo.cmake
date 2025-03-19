@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.cpp" "CMakeFiles/bbc.dir/Bitboard.cpp.o" "gcc" "CMakeFiles/bbc.dir/Bitboard.cpp.o.d"
+  "/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.cpp" "CMakeFiles/bbc.dir/BitboardClass.cpp.o" "gcc" "CMakeFiles/bbc.dir/BitboardClass.cpp.o.d"
   "/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.cpp" "CMakeFiles/bbc.dir/Pieces.cpp.o" "gcc" "CMakeFiles/bbc.dir/Pieces.cpp.o.d"
   "/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/main.cpp" "CMakeFiles/bbc.dir/main.cpp.o" "gcc" "CMakeFiles/bbc.dir/main.cpp.o.d"
   )

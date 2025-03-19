@@ -956,5 +956,5 @@ CMakeFiles/bbc.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.h \
+  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h \
   /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h

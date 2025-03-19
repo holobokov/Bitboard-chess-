@@ -1,16 +1,50 @@
 //
-// Created by Alexandr on 18/03/2025.
+// Created by Alexandr on 19/03/2025.
 //
 
-#ifndef BITBOARD_H
-#define BITBOARD_H
+#ifndef BITBOARDCLASS_H
+#define BITBOARDCLASS_H
 
 #define U64 unsigned long long //custom type
 
-//set/get/pop macros
-#define get_bit(bitboard, square) (bitboard & (1ULL << square))
-#define set_bit(bitboard, square) (bitboard |= (1ULL << square))
-#define pop_bit(bitboard, square) (get_bit(bitboard, square) ? bitboard ^= (1ULL << square) : 0);
+class Bitboard {
+private:
+    U64 bitboard;
+
+    // //not A file constant
+    // const U64 not_a_file = 18374403900871474942ULL;
+    // //not H file constant
+    // const U64 not_h_file = 9187201950435737471ULL;
+    // //not HG file constant
+    // const U64 not_hg_file = 4557430888798830399ULL;
+    // //not AB constant
+    // const U64 not_ab_file = 18229723555195321596ULL;
+
+public:
+    Bitboard();
+
+    Bitboard(U64 bitboard) {
+        this->bitboard = bitboard;
+    };
+
+    U64 getBitboard() const {
+        return bitboard;
+    }
+
+    void setBitboard(U64 bitboard) {
+        this->bitboard = bitboard;
+    }
+
+    U64 get_bit(int square);
+    void set_bit(int square);
+    void pop_bit(int square);
+
+    void print_bitboard();
+    int count_bits();
+    int index_first_bit();
+    U64 set_occupancy(int index, int bits_in_mask);
+
+};
 
 //not A file constant
 const U64 not_a_file = 18374403900871474942ULL;
@@ -50,9 +84,5 @@ enum {
     white, black
 };
 
-void print_bitboard(U64 bitboard);
-int count_bits(U64 bitboard);
-int index_first_bit(U64 bitboard);
-U64 set_occupancy(int index, int bits_in_mask, U64 attack_mask);
 
-#endif //BITBOARD_H
+#endif //BITBOARDCLASS_H

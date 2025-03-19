@@ -153,6 +153,30 @@ Bitboard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Bitboard.cpp.s
 .PHONY : Bitboard.cpp.s
 
+BitboardClass.o: BitboardClass.cpp.o
+.PHONY : BitboardClass.o
+
+# target to build an object file
+BitboardClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/BitboardClass.cpp.o
+.PHONY : BitboardClass.cpp.o
+
+BitboardClass.i: BitboardClass.cpp.i
+.PHONY : BitboardClass.i
+
+# target to preprocess a source file
+BitboardClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/BitboardClass.cpp.i
+.PHONY : BitboardClass.cpp.i
+
+BitboardClass.s: BitboardClass.cpp.s
+.PHONY : BitboardClass.s
+
+# target to generate assembly for a file
+BitboardClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/BitboardClass.cpp.s
+.PHONY : BitboardClass.cpp.s
+
 Pieces.o: Pieces.cpp.o
 .PHONY : Pieces.o
 
@@ -213,6 +237,9 @@ help:
 	@echo "... Bitboard.o"
 	@echo "... Bitboard.i"
 	@echo "... Bitboard.s"
+	@echo "... BitboardClass.o"
+	@echo "... BitboardClass.i"
+	@echo "... BitboardClass.s"
 	@echo "... Pieces.o"
 	@echo "... Pieces.i"
 	@echo "... Pieces.s"

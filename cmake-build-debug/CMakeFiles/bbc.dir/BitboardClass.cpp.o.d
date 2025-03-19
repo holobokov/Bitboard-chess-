@@ -1,5 +1,5 @@
-CMakeFiles/bbc.dir/Pieces.cpp.o: \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.cpp \
+CMakeFiles/bbc.dir/BitboardClass.cpp.o: \
+  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
@@ -956,5 +956,4 @@ CMakeFiles/bbc.dir/Pieces.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h
+  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h

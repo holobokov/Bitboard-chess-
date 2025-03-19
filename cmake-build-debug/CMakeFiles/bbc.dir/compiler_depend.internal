@@ -3,6 +3,9 @@
 
 CMakeFiles/bbc.dir/Bitboard.cpp.o
  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.cpp
+
+CMakeFiles/bbc.dir/BitboardClass.cpp.o
+ /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/Availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h
@@ -959,8 +962,7 @@ CMakeFiles/bbc.dir/Bitboard.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h
- /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.h
- /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h
+ /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h
 
 CMakeFiles/bbc.dir/Pieces.cpp.o
  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.cpp
@@ -1920,7 +1922,7 @@ CMakeFiles/bbc.dir/Pieces.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h
- /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.h
+ /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h
  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h
 
 CMakeFiles/bbc.dir/main.cpp.o
@@ -2881,6 +2883,6 @@ CMakeFiles/bbc.dir/main.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h
- /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.h
+ /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h
  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h
 

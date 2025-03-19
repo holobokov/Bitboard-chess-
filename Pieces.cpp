@@ -2,7 +2,7 @@
 // Created by Alexandr on 18/03/2025.
 //
 #include <iostream>
-#include "Bitboard.h"
+#include "BitboardClass.h"
 #include "Pieces.h"
 
 //pawn attacks table [side][square]
@@ -14,19 +14,20 @@ U64 mask_pawn_attacks(int side, int square) {
     U64 attacks = 0ULL;
 
     //piece bitboard
-    U64 bitboard = 0ULL;
+    Bitboard bitboard(0ULL);
 
     //set piece on board
-    set_bit(bitboard, square);
+    bitboard.set_bit(square);
+    U64 board = bitboard.getBitboard();
 
     //white pawns
     if (!side) {
-        if ((bitboard >> 7) & not_a_file) attacks |= (bitboard >> 7);
-        if ((bitboard >> 9) & not_h_file) attacks |= (bitboard >> 9);
+        if ((board >> 7) & not_a_file) attacks |= (board >> 7);
+        if ((board >> 9) & not_h_file) attacks |= (board >> 9);
     } else {
         //black pawns
-        if ((bitboard << 7) & not_h_file) attacks |= (bitboard << 7);
-        if ((bitboard << 9) & not_a_file) attacks |= (bitboard << 9);
+        if ((board << 7) & not_h_file) attacks |= (board << 7);
+        if ((board << 9) & not_a_file) attacks |= (board << 9);
     }
 
     return attacks;
@@ -41,17 +42,18 @@ U64 knight_attacks[64];
 U64 mask_knight_attacks(int square) {
     U64 attacks = 0ULL;
 
-    U64 bitboard = 0ULL;
+    Bitboard bitboard(0ULL);
 
-    set_bit(bitboard, square);
-    if ((bitboard >> 15) & not_a_file) attacks |= (bitboard >> 15);
-    if ((bitboard >> 17) & not_h_file) attacks |= (bitboard >> 17);
-    if ((bitboard >> 10) & not_hg_file) attacks |= (bitboard >> 10);
-    if ((bitboard << 6) & not_hg_file) attacks |= (bitboard << 6);
-    if ((bitboard << 15) & not_h_file) attacks |= (bitboard << 15);
-    if ((bitboard << 17) & not_a_file) attacks |= (bitboard << 17);
-    if ((bitboard << 10) & not_ab_file) attacks |= (bitboard << 10);
-    if ((bitboard >> 6) & not_ab_file) attacks |= (bitboard >> 6);
+    bitboard.set_bit(square);
+    U64 board = bitboard.getBitboard();
+    if ((board >> 15) & not_a_file) attacks |= (board >> 15);
+    if ((board >> 17) & not_h_file) attacks |= (board >> 17);
+    if ((board >> 10) & not_hg_file) attacks |= (board >> 10);
+    if ((board << 6) & not_hg_file) attacks |= (board << 6);
+    if ((board << 15) & not_h_file) attacks |= (board << 15);
+    if ((board << 17) & not_a_file) attacks |= (board << 17);
+    if ((board << 10) & not_ab_file) attacks |= (board << 10);
+    if ((board >> 6) & not_ab_file) attacks |= (board >> 6);
 
     return attacks;
 }
@@ -62,18 +64,19 @@ U64 king_attacks[64];
 U64 mask_king_attacks(int square) {
     U64 attacks = 0ULL;
 
-    U64 bitboard = 0ULL;
+    Bitboard bitboard(0ULL);
 
-    set_bit(bitboard, square);
+    bitboard.set_bit(square);
+    U64 board = bitboard.getBitboard();
 
-    if ((bitboard >> 7) & not_a_file) attacks |= (bitboard >> 7);
-    if (bitboard >> 8) attacks |= (bitboard >> 8);
-    if ((bitboard >> 9) & not_h_file) attacks |= (bitboard >> 9);
-    if ((bitboard >> 1) & not_h_file) attacks |= (bitboard >> 1);
-    if ((bitboard << 7) & not_h_file) attacks |= (bitboard << 7);
-    if (bitboard << 8) attacks |= (bitboard << 8);
-    if ((bitboard << 9) & not_a_file) attacks |= (bitboard << 9);
-    if ((bitboard << 1) & not_a_file) attacks |= (bitboard << 1);
+    if ((board >> 7) & not_a_file) attacks |= (board >> 7);
+    if (board >> 8) attacks |= (board >> 8);
+    if ((board >> 9) & not_h_file) attacks |= (board >> 9);
+    if ((board >> 1) & not_h_file) attacks |= (board >> 1);
+    if ((board << 7) & not_h_file) attacks |= (board << 7);
+    if (board << 8) attacks |= (board << 8);
+    if ((board << 9) & not_a_file) attacks |= (board << 9);
+    if ((board << 1) & not_a_file) attacks |= (board << 1);
 
     return attacks;
 }
