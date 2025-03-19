@@ -1,10 +1,13 @@
 #include <iostream>
-#include "bbc.h"
 #include "Bitboard.h"
 #include "Pieces.h"
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+//created new branch <dev> for the OOP version od project
+
+
 int main() {
 
     init_leapers_attacks();
