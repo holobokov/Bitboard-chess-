@@ -78,5 +78,6 @@ void print_bitboard(U64 bitboard);
 int count_bits(U64 bitboard);
 int index_first_bit(U64 bitboard);
 U64 set_occupancy(int index, int bits_in_mask, U64 attack_mask);
+unsigned int get_random_number();
 
 #endif //BITBOARD_H

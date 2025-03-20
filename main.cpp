@@ -5,6 +5,12 @@
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
+    //std::cout << random() << std::endl;
+    std::cout << get_random_number() << std::endl;
+    std::cout << get_random_number() << std::endl;
+    std::cout << get_random_number() << std::endl;
+    std::cout << get_random_number() << std::endl;
+    std::cout << get_random_number() << std::endl;
 
     init_leapers_attacks();
 
