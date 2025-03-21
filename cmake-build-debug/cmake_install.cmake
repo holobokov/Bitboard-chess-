@@ -1,4 +1,4 @@
-# Install script for directory: /Users/golobokov/Desktop/bbc
+# Install script for directory: /Users/golobokov/Desktop/PK2/7c7f2b27-gr67-repo/Projekt/bbc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/golobokov/Desktop/bbc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/golobokov/Desktop/PK2/7c7f2b27-gr67-repo/Projekt/bbc/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
