@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Random_Number.h"
 #include "Bitboard.h"
 #include "Pieces.h"
 
@@ -6,11 +7,6 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
     //std::cout << random() << std::endl;
-    std::cout << get_random_number() << std::endl;
-    std::cout << get_random_number() << std::endl;
-    std::cout << get_random_number() << std::endl;
-    std::cout << get_random_number() << std::endl;
-    std::cout << get_random_number() << std::endl;
 
     init_leapers_attacks();
 
@@ -36,10 +32,13 @@ int main() {
     ///std::cout << index_first_bit(block) << ", " << square_to_coordinate[index_first_bit(block)] << std::endl;
 
     //print_bitboard(not_ab_file);
-    U64 attack_mask = mask_rook_attacks(e4);
-    U64 occupancy = set_occupancy(4095, count_bits(attack_mask), attack_mask);
+    //U64 attack_mask = mask_rook_attacks(e4);
+    //U64 occupancy = set_occupancy(4095, count_bits(attack_mask), attack_mask);
 
-    print_bitboard(occupancy);
+    print_bitboard(get_random_U32_number());
+    print_bitboard(get_random_U32_number() & 0xFFFF); // slice upper 16 bits
+    print_bitboard(get_random_U64_number());
+    print_bitboard(generate_magic_number());
 
     return 0;
 }

@@ -67,20 +67,3 @@ U64 set_occupancy(int index, int bits_in_mask, U64 attack_mask) {
     return occupancy;
 }
 
-// implementing XORSHIFT32 algorithm to generate pseudo random numbers
-unsigned int state = 1804289383;
-
-unsigned int get_random_number() {
-    //get current state
-    unsigned int num = state;
-
-    //XOR shift algorithm
-    num ^= num << 13;
-    num ^= num >> 17;
-    num ^= num << 5;
-
-    //update random number state
-    state = num;
-
-    return num;
-}
