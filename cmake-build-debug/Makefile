@@ -129,30 +129,6 @@ bbc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/build
 .PHONY : bbc/fast
 
-Bitboard.o: Bitboard.cpp.o
-.PHONY : Bitboard.o
-
-# target to build an object file
-Bitboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Bitboard.cpp.o
-.PHONY : Bitboard.cpp.o
-
-Bitboard.i: Bitboard.cpp.i
-.PHONY : Bitboard.i
-
-# target to preprocess a source file
-Bitboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Bitboard.cpp.i
-.PHONY : Bitboard.cpp.i
-
-Bitboard.s: Bitboard.cpp.s
-.PHONY : Bitboard.s
-
-# target to generate assembly for a file
-Bitboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Bitboard.cpp.s
-.PHONY : Bitboard.cpp.s
-
 BitboardClass.o: BitboardClass.cpp.o
 .PHONY : BitboardClass.o
 
@@ -201,6 +177,30 @@ Pieces.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Pieces.cpp.s
 .PHONY : Pieces.cpp.s
 
+Random_Number.o: Random_Number.cpp.o
+.PHONY : Random_Number.o
+
+# target to build an object file
+Random_Number.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Random_Number.cpp.o
+.PHONY : Random_Number.cpp.o
+
+Random_Number.i: Random_Number.cpp.i
+.PHONY : Random_Number.i
+
+# target to preprocess a source file
+Random_Number.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Random_Number.cpp.i
+.PHONY : Random_Number.cpp.i
+
+Random_Number.s: Random_Number.cpp.s
+.PHONY : Random_Number.s
+
+# target to generate assembly for a file
+Random_Number.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bbc.dir/build.make CMakeFiles/bbc.dir/Random_Number.cpp.s
+.PHONY : Random_Number.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -234,15 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... bbc"
-	@echo "... Bitboard.o"
-	@echo "... Bitboard.i"
-	@echo "... Bitboard.s"
 	@echo "... BitboardClass.o"
 	@echo "... BitboardClass.i"
 	@echo "... BitboardClass.s"
 	@echo "... Pieces.o"
 	@echo "... Pieces.i"
 	@echo "... Pieces.s"
+	@echo "... Random_Number.o"
+	@echo "... Random_Number.i"
+	@echo "... Random_Number.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

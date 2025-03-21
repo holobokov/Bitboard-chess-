@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/bbc.dir/Bitboard.cpp.o"
-  "CMakeFiles/bbc.dir/Bitboard.cpp.o.d"
   "CMakeFiles/bbc.dir/BitboardClass.cpp.o"
   "CMakeFiles/bbc.dir/BitboardClass.cpp.o.d"
   "CMakeFiles/bbc.dir/Pieces.cpp.o"
   "CMakeFiles/bbc.dir/Pieces.cpp.o.d"
+  "CMakeFiles/bbc.dir/Random_Number.cpp.o"
+  "CMakeFiles/bbc.dir/Random_Number.cpp.o.d"
   "CMakeFiles/bbc.dir/main.cpp.o"
   "CMakeFiles/bbc.dir/main.cpp.o.d"
   "bbc"

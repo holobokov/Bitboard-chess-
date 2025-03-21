@@ -3,4 +3,4 @@ project(bbc)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(bbc main.cpp Bitboard.cpp Pieces.cpp Pieces.h BitboardClass.h BitboardClass.cpp)
+add_executable(bbc main.cpp Pieces.cpp Pieces.h BitboardClass.h BitboardClass.cpp Random_Number.h Random_Number.cpp)

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "BitboardClass.h"
 #include "Pieces.h"
+#include "Random_Number.h"
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -34,12 +35,13 @@ int main() {
     ///std::cout << index_first_bit(block) << ", " << square_to_coordinate[index_first_bit(block)] << std::endl;
 
     //print_bitboard(not_ab_file);
-    Bitboard attack_mask;
-    attack_mask.setBitboard(mask_rook_attacks(e4));
-    Bitboard occupancy;
-    occupancy.setBitboard(attack_mask.set_occupancy(4095, attack_mask.count_bits()));
-
-    occupancy.print_bitboard();
+    // Bitboard attack_mask;
+    // attack_mask.setBitboard(mask_rook_attacks(e4));
+    // Bitboard occupancy;
+    // occupancy.setBitboard(attack_mask.set_occupancy(4095, attack_mask.count_bits()));
+    //
+    Bitboard bitboard(generate_magic_number());
+    bitboard.print_bitboard();
 
     return 0;
 }

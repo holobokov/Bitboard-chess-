@@ -83,24 +83,10 @@ CMakeFiles/bbc.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bbc.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/main.cpp -o CMakeFiles/bbc.dir/main.cpp.s
 
-CMakeFiles/bbc.dir/Bitboard.cpp.o: CMakeFiles/bbc.dir/flags.make
-CMakeFiles/bbc.dir/Bitboard.cpp.o: /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.cpp
-CMakeFiles/bbc.dir/Bitboard.cpp.o: CMakeFiles/bbc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bbc.dir/Bitboard.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bbc.dir/Bitboard.cpp.o -MF CMakeFiles/bbc.dir/Bitboard.cpp.o.d -o CMakeFiles/bbc.dir/Bitboard.cpp.o -c /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.cpp
-
-CMakeFiles/bbc.dir/Bitboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bbc.dir/Bitboard.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.cpp > CMakeFiles/bbc.dir/Bitboard.cpp.i
-
-CMakeFiles/bbc.dir/Bitboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bbc.dir/Bitboard.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Bitboard.cpp -o CMakeFiles/bbc.dir/Bitboard.cpp.s
-
 CMakeFiles/bbc.dir/Pieces.cpp.o: CMakeFiles/bbc.dir/flags.make
 CMakeFiles/bbc.dir/Pieces.cpp.o: /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.cpp
 CMakeFiles/bbc.dir/Pieces.cpp.o: CMakeFiles/bbc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bbc.dir/Pieces.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bbc.dir/Pieces.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bbc.dir/Pieces.cpp.o -MF CMakeFiles/bbc.dir/Pieces.cpp.o.d -o CMakeFiles/bbc.dir/Pieces.cpp.o -c /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.cpp
 
 CMakeFiles/bbc.dir/Pieces.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/bbc.dir/Pieces.cpp.s: cmake_force
 CMakeFiles/bbc.dir/BitboardClass.cpp.o: CMakeFiles/bbc.dir/flags.make
 CMakeFiles/bbc.dir/BitboardClass.cpp.o: /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.cpp
 CMakeFiles/bbc.dir/BitboardClass.cpp.o: CMakeFiles/bbc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bbc.dir/BitboardClass.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bbc.dir/BitboardClass.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bbc.dir/BitboardClass.cpp.o -MF CMakeFiles/bbc.dir/BitboardClass.cpp.o.d -o CMakeFiles/bbc.dir/BitboardClass.cpp.o -c /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.cpp
 
 CMakeFiles/bbc.dir/BitboardClass.cpp.i: cmake_force
@@ -125,20 +111,34 @@ CMakeFiles/bbc.dir/BitboardClass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bbc.dir/BitboardClass.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.cpp -o CMakeFiles/bbc.dir/BitboardClass.cpp.s
 
+CMakeFiles/bbc.dir/Random_Number.cpp.o: CMakeFiles/bbc.dir/flags.make
+CMakeFiles/bbc.dir/Random_Number.cpp.o: /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Random_Number.cpp
+CMakeFiles/bbc.dir/Random_Number.cpp.o: CMakeFiles/bbc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bbc.dir/Random_Number.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bbc.dir/Random_Number.cpp.o -MF CMakeFiles/bbc.dir/Random_Number.cpp.o.d -o CMakeFiles/bbc.dir/Random_Number.cpp.o -c /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Random_Number.cpp
+
+CMakeFiles/bbc.dir/Random_Number.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bbc.dir/Random_Number.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Random_Number.cpp > CMakeFiles/bbc.dir/Random_Number.cpp.i
+
+CMakeFiles/bbc.dir/Random_Number.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bbc.dir/Random_Number.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Random_Number.cpp -o CMakeFiles/bbc.dir/Random_Number.cpp.s
+
 # Object files for target bbc
 bbc_OBJECTS = \
 "CMakeFiles/bbc.dir/main.cpp.o" \
-"CMakeFiles/bbc.dir/Bitboard.cpp.o" \
 "CMakeFiles/bbc.dir/Pieces.cpp.o" \
-"CMakeFiles/bbc.dir/BitboardClass.cpp.o"
+"CMakeFiles/bbc.dir/BitboardClass.cpp.o" \
+"CMakeFiles/bbc.dir/Random_Number.cpp.o"
 
 # External object files for target bbc
 bbc_EXTERNAL_OBJECTS =
 
 bbc: CMakeFiles/bbc.dir/main.cpp.o
-bbc: CMakeFiles/bbc.dir/Bitboard.cpp.o
 bbc: CMakeFiles/bbc.dir/Pieces.cpp.o
 bbc: CMakeFiles/bbc.dir/BitboardClass.cpp.o
+bbc: CMakeFiles/bbc.dir/Random_Number.cpp.o
 bbc: CMakeFiles/bbc.dir/build.make
 bbc: CMakeFiles/bbc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bbc"

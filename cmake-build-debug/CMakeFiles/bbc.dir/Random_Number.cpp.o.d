@@ -1,5 +1,5 @@
-CMakeFiles/bbc.dir/main.cpp.o: \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/main.cpp \
+CMakeFiles/bbc.dir/Random_Number.cpp.o: \
+  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Random_Number.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
@@ -957,5 +957,4 @@ CMakeFiles/bbc.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/unistd.h \
   /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/BitboardClass.h \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h \
-  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Random_Number.h
+  /Users/golobokov/Desktop/bbc-dev/Bitboard-chess-/Pieces.h
