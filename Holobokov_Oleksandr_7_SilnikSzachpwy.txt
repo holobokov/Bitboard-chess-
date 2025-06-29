@@ -1,0 +1,46 @@
+
+Silnik Szachowy
+Oleksandr Holobokov
+Sekcja 7, PK
+
+Jako temat mojego projektu semestralnego wybrałem „Silnik szachowy”, który będzie realizowany w języku C++ z wykorzystaniem programowania obiektowego.
+Silnik szachowy to program komputerowy, który analizuje wszystkie możliwe pozycje na szachownicy, rozważając nawet do miliona ruchów naprzód.
+
+Mój projekt będzie realizował wszystkie podstawowe funkcje silnika szachowego, a mianowicie:
+
+1. Reprezentacja szachownicy:
+   Do przedstawienia szachownicy, zamiast zwykłej tablicy 8×8, będę wykorzystywał 64-bitową liczbę (unsigned long long), co jest najlepszym rozwiązaniem z punktu widzenia optymalizacji.
+
+2. Generowanie ataków:
+   - Wszystkie możliwe ataki dla figur skocznych (leaper pieces), takich jak pion, koń i król, zostaną wyliczone z góry i zapisane w tablicach typu U64 (unsigned long long).
+   - Dla figur ślizgowych (sliding pieces), takich jak goniec, wieża i hetman, zastosuję technikę Magic Bitboards.
+
+3. Ruchy na szachownicy:
+   Każdy ruch będzie kodowany jako liczba typu int.
+
+4. Podejście „copy/make” przy wykonywaniu ruchów:
+   Tworzenie kopii pozycji, a następnie wykonywanie ruchu na tej kopii. Dzięki temu można łatwo wrócić do poprzedniego stanu.
+
+5. Negamax search z alpha-beta pruning:
+   Uproszczony algorytm Minimax, który zakłada, że przeciwnik również maksymalizuje (czyli ja minimalizuję jego maksimum), z zastosowaniem przycinania alpha-beta, co pozwala na pominięcie nieoptymalnych gałęzi drzewa.
+
+6. PV / killer / kolejność ruchów historycznych:
+   - PV (Principal Variation) – najlepsza znana linia ruchów,
+   - Killer moves – ruchy, które wcześniej przyniosły dobre wyniki,
+   - Historia ruchów – statystyka skutecznych ruchów z przeszłości.
+
+7. Pogłębianie iteracyjne (Iterative Deepening):
+   Zamiast od razu przeszukiwać głęboko, silnik analizuje pozycję kolejno na głębokościach 1, 2, 3 itd., wykorzystując wcześniejsze wyniki do przyspieszenia kolejnych etapów.
+
+8. Tabele transpozycji (Transposition Tables):
+   Pamięć podręczna (hashtables), która przechowuje oceny już odwiedzonych pozycji – pozwala to uniknąć powtarzania tych samych obliczeń.
+
+9. Ocena pozycji – materiał / pozycja / pionki / mobilność / bezpieczeństwo króla:
+   - Ilość i wartość figur (materiał),
+   - Położenie figur na planszy (pozycja),
+   - Układ pionków,
+   - Mobilność figur,
+   - Bezpieczeństwo króla.
+
+10. Protokół UCI (Universal Chess Interface):
+    Protokół komunikacji z graficznym interfejsem szachowym (GUI), który umożliwia przesyłanie komend i analizowanie partii.

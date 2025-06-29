@@ -1,0 +1,3 @@
+/Users/golobokov/Desktop/Projekt/cmake-build-debug/CMakeFiles/bbc.dir
+/Users/golobokov/Desktop/Projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/golobokov/Desktop/Projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
